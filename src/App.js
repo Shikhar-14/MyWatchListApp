@@ -52,6 +52,7 @@ const removeFavouriteMovie = (movie) => {
     );
 
     setfavourites(newFavouriteList);
+    saveToLocalStorage(newFavouriteList);
 };
 
 
