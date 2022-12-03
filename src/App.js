@@ -59,7 +59,7 @@ return (
     <div className='row'>
      <MovieList 
       movies = {favourites} 
-      handlefavouritesClick={addFavouriteMovie} 
+      handlefavouritesClick={removeFavouriteMovie} 
       favouriteComponent={RemoveFavourites}/>
 
 
