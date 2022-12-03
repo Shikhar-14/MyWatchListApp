@@ -7,7 +7,7 @@ const MovieList = (props)=>{
             {props.movies.map((movie,index)=> (
                 <div className="image-container d-flex justify-content-smart m-3">
                  <img src={movie.Poster} alt='Poster not available'></img>
-                 <div className="overlay d-flex align-items-centre justify-content-centre">
+                 <div onClick={() => props.handlefavouritesClick(movie)} className="overlay d-flex align-items-centre justify-content-centre">
                     <FavouriteComponent />
                  </div>
                 </div>
