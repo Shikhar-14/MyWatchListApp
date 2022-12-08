@@ -1,11 +1,15 @@
 body {
-    background: #141414;
-    color: #ffffff;
+    background: #ffffff;
+    color: #141414;
 }
 
 .movie-app>.row {
-    overflow-x: auto;
+    overflow: scroll;
     flex-wrap: nowrap;
+}
+
+.movie-app>.row::-webkit-scrollbar {
+    display: none;
 }
 
 .image-container {
@@ -24,12 +28,12 @@ body {
 
 .overlay {
     position: absolute;
-    background: rgba(0, 0, 0, 0.8);
-    width: 100;
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
     transition: 0.5s ease;
     opacity: 0;
     bottom: 0;
     font-size: 20px;
     padding: 20px;
-    text-align: center;
+    text-align: right;
 }
